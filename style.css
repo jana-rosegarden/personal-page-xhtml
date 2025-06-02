@@ -1,0 +1,744 @@
+:root{
+    --beige: #A5805A;
+    --lightBeige: #D6C5B4;
+    --blue: #5A7FA5;
+    --orangeRed: #FE4501; 
+    --amaranth: #E41B4A;
+    --20pxfontSize: clamp(1.2rem, 4.8vw, 1.3rem);
+    --32pxfontSize: clamp(2rem, 2.5vw, 2.2rem);
+    --5pxBorderRadius: clamp(5px, 1.21vw, 10px);
+    --8pxBorderRadius: clamp(8px, 2vw, 14px);
+    --10pxBorderRadius: clamp(10px, 1.3vw, 18px);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+a{
+    color: black;
+}
+#mobile-um-container{
+    display: none;
+}
+#header-div{
+    padding: clamp(40px, 10vw, 50px);
+    padding-bottom: clamp(16px, 4.5vw, 20px);
+}
+#header-div h1{
+    color: #A5805A;
+}
+
+#header-div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-div h1{
+    font-family: "Kaushan Script", cursive;
+}
+nav a{
+    font-size: var(--20pxfontSize);
+    padding: clamp(5px, 0.7vw,10px);
+    border: solid 2px white;
+    border-radius: var(--10pxBorderRadius);
+
+}
+#header-div ul li a:hover{
+    background-color: #e8eaed;
+    border: 2px solid white;
+}
+
+#homepage-icon{
+    width: 6.5vw;
+    height: 6.5vw;
+    padding: clamp(5px, 0.7vw,10px);
+    border-radius: var(--10pxBorderRadius);
+}
+#mobile-sidenav{
+    height: clamp(300px, 60vh, 543px);
+    width: 0;
+    background-color: var(--lightBeige);
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    border-top-right-radius: var(--8pxBorderRadius);
+    border-bottom-right-radius: var(--8pxBorderRadius);
+    font-size: 1.25rem;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s, padding 0.5s;
+    z-index: 1;
+}
+#mobile-sidenav.open {
+    width: clamp(200px, 68vw, 281px);
+    padding: 1% 5% 5% 5%;
+  }
+#deco-circle-div{
+    display: none;
+}
+#nav-close-btn{
+    font-size: 1.8rem;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#mobile-sidenav a{
+    transition: 0.3s;
+}
+
+#kontakt-div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 4vw; 
+    bottom: 8.2vh;
+    left: 18vw;
+}
+footer{
+    max-width: 80%;
+    text-align: center;
+    padding: clamp(20px, 4.8vw, 50px);
+    margin: auto;
+}
+footer p{
+    font-size: clamp(15px, 3.8vw, 18px);
+    font-weight: 300;
+    color: #3D3D3D;
+}
+
+#kontakt-btn{
+   text-align: center;
+   /*padding: 3.9vw 11vw;*/
+   padding: clamp(16px, 3.9vw, 21px) clamp(45px, 11vw, 50px);
+   border-radius: 10%/22%;
+   background-color: var(--orangeRed);
+   opacity: 0.9;
+   color: white;
+   font-size: var(--20pxfontSize);
+   font-weight: 600;
+   letter-spacing: 0.2rem;
+}
+#linkedin-icon{
+    width: clamp(45px, 10.5vw, 50px);
+    height: clamp(45px, 10.5vw, 50px);
+}
+#kontakt-div a, #kontakt-btn, #submit-btn{
+    cursor: pointer;
+}
+#impressum{
+    text-align: left;
+    margin-bottom: 3%;
+}
+/*SUBSEITEN für Alle */
+#mobile-visual-nav{
+    display: none;
+}
+.subseiten-artikel-header{
+   font-size: 1.5rem;
+   font-weight: 400;
+   margin-bottom: clamp(35px, 8.5vw, 40px);
+}
+#subseiten-main-section p{
+   line-height: 1.8;
+}
+#subseiten-main-section{
+    max-width: 86%;
+    /*height: 560px; /* hier height in anderer Unit angeben. Test-height 
+    height: clapm(560px, 136vw, 700px); */
+    height: fit-content;
+    margin: auto;
+    margin-top: clamp(21px, 5vw, 25px);
+    background-color: white;
+    border-radius: var(--8pxBorderRadius);
+    padding: clamp(35px, 8.5vw, 40px) clamp(70px, 16vw, 80px);
+}
+#subseiten-deco-leiste{
+    height: clamp(20px, 4.6vw, 25px);
+    width: 86%;
+    background-color: var(--blue);
+    border-radius: var(--8pxBorderRadius);
+    margin: auto;
+}
+#formular-container{
+    margin: auto;
+    margin-top: clamp(10px, 2.4vw, 15px);
+    width: 80%;
+    padding: clamp(30px, 3vw, 45px) clamp(50px, 6vw, 80px);
+    background-color: var(--amaranth);
+    color: white;
+    border-radius: var(--5pxBorderRadius);
+}
+
+#kontakt-form{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding-top: clamp(10px, 2.4vw, 15px);
+}
+#kontakt-form legend{
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-bottom: clamp(15px, 3.4vw, 18px);
+}
+#kontakt-form h2{
+    font-size: var(--20pxfontSize);
+    font-weight: 400;
+    margin-bottom: clamp(26px, 6.3vw, 30px);
+}
+#kontakt-form input{
+    display: inline-block;
+    width: 80%;
+    margin-top: clamp(10px, 3vw, 14px);
+    margin-bottom: clamp(15px, 3.4vw, 18px);
+}
+
+#message{
+    margin-top: clamp(10px, 3vw, 14px);
+    font-family: "Roboto", sans-serif;
+}
+
+#kontakt-form input, #message{
+    font-size: 1.125rem;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: var(--5pxBorderRadius);
+    line-height: 2;
+    letter-spacing: 1px;
+    text-indent: 10px;
+}
+
+fieldset #submit-btn{
+    display: block;
+    color: var(--amaranth);
+    font-weight: 600;
+    margin: clamp(30px, 7.1vw, 35px);
+    padding: clamp(5px, 3vw, 14px) clamp(15px, 7.1vw, 35px);
+    border-radius: clamp(20px, 4.7vw, 25px);
+    cursor: pointer;
+    font-size: clamp(20px, 5.8vw, 24px);
+}
+
+#thank-you-message h2{
+   font-size: 1.1rem;
+   color: white;
+   padding-bottom: 2%;
+   font-weight: 400;
+   letter-spacing: 0.2rem;
+}
+#thank-you-message p{
+    text-align: center;
+    padding: 8% 3%;
+    background-color: #D9D9D9;
+    color: #3D3D3D;
+    border-radius: var(--5pxBorderRadius);
+    font-size: 1.1rem;
+    line-height: 1.6 ;
+}
+
+/* NUR ab Tablet - anpassen, 27.05 */
+#subseiten-main-section.projekte{
+    background: url("images/projekt-backdeco.png");
+    background-size: cover;
+    padding: 5%;
+}
+#projekte-section-header{
+   font-size: clamp(20px, 5vw, 30px);
+   font-weight: 500;
+   color: var(--beige);
+   margin-bottom: clamp(10px, 2.4vw, 25px);
+}
+#projekt-wrapper{
+    border-radius: var(--5pxBorderRadius);
+    color: #4F4F4F;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(17px, 14.2vw, 21px) ;
+}
+
+#projekt-header{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+#projekt-subheader{
+    font-weight: 400;
+    font-size: var(--20pxfontSize);
+}
+#projekt-link-btn{
+   display: inline-block;
+   margin-right: auto;
+   background-color: #A5805A;
+   color: white;
+   padding: clamp(16px, 3.9vw, 20px) clamp(36px, 6vw, 45px);
+   border-radius: 1.5rem;
+   font-size: var(--20pxfontSize);
+   cursor: pointer;
+}
+
+
+/*MOBILE*/
+@media (max-height: 600px) {
+    #mobile-sidenav{
+      height: 90vh; /* Bei kleinen Bildschirmen lieber mehr % statt px */
+    } 
+  }
+
+@media only screen and (max-width: 767px) {
+    #header-div h1{
+        margin-bottom: clamp(14px, 3.4vw, 25px);
+        margin-left: 10%;
+    }
+    #header-div ul{
+        max-width: 80%;
+    }
+    #mobile-homepage-icon{
+        width: clamp(50px, 12vw, 55px);
+        height: clamp(50px, 12vw, 55px);
+    }
+    
+    .tablet-only{
+        display: none;
+    }
+
+    #main-div{
+        height: 100vh;
+        background: url("images/jana_marian.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    #projekt-btn{
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        width: clamp(37%, 45vw, 43%);
+        padding: clamp(20px, 6vw, 30px);
+        font-size: var(--20pxfontSize);
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        color: white;
+        background-color: #5A7FA5;
+        border: none;
+        border-radius: 10%/22%;
+        box-shadow: 0px 0px 40px -12px rgba(0,0,0,0.92);
+        top: 5.4vh;
+        right: 6.5%;
+    }
+    #main-section{
+        display: none;
+    }
+    #header-div #homepage-link-a:hover{
+        display: inline-block;
+        background-color: white;
+    }
+    #header-div ul li a:hover{
+        background-color: white;
+    }
+
+    /* SUB-SEITEN */
+    #mobile-visual-nav{
+        display: inline-block;
+        margin-left: clamp(40px, 9.4vw, 45px);
+        margin-bottom: clamp(20px, 5vw, 22px);
+    }
+    #mobile-visual-nav ul{
+        display: flex;
+    }
+    #mobile-visual-nav ul a{
+        font-size: 1.1rem;
+        font-weight: 300;
+        border: none;
+    }
+    #mobile-visual-nav ul li+li:before{
+        padding: clamp(8px, 1.9vw, 11px);
+        content: "/\00a0";
+    }
+    .visual-nav-active-link{
+        background-color: lightgrey;
+    }
+    div#main-div.mobile-subseiten-main-div{
+        padding-top: 4.5vw; 
+        padding-bottom: clamp(60px, 14vw, 66px);
+        background: none;
+        background-color: var(--lightBeige);
+        height: fit-content;
+    }
+    
+    #projekt-btn.subseiten-btn, #kontakt-div.mobile-subseiten-kontakt-div{
+        position: static;
+        display: block;
+        margin-top: clamp(40px, 9.2vw, 45px);
+        margin-left: clamp(50px, 9.4vw, 55px);
+    }
+    
+    #projekt-btn.subseiten-btn, #kontakt-btn.mobile-subseiten-kontakt-btn{
+        width: fit-content;
+        padding: clamp(15px, 3.6vw, 17px) clamp(55px, 13.9vw, 60px);
+        border-radius: clamp(15px, 2vw, 20px);
+    }
+    #kontakt-div.mobile-subseiten-kontakt-div{
+        display: flex;
+        width: fit-content;
+    }
+    #kontakt-btn.mobile-subseiten-kontakt-btn{
+        padding: clamp(15px, 3.6vw, 17px) clamp(55px, 13.9vw, 60px);
+    }
+}
+
+
+
+/*TABLET*/
+@media only screen and (min-width: 768px) {
+    
+    #mobile-homepage-link{
+        display: none;
+    }
+    .tablet-only{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-only{
+        display: none;
+    }
+    .li-home-set {
+        display: flex;
+        align-items: center;
+    }
+    #header-div .li-home-set .homelink{
+        font-family: "La Belle Aurore", cursive;
+        font-size: clamp(2rem, 4.7vw, 3.5rem);
+        padding: clamp(5px, 0.7vw,10px);
+        border-radius: clamp(10px, 1.3vw, 18px);
+    }
+    #homepage-icon{
+        padding: 0;
+    }
+    #header-div h1{
+        display: inline-block;
+        margin-bottom: clamp(40px, 10vw, 60px);
+        margin-left: 25%;
+        color: #D6C5B4;
+        font-size: clamp(1.8rem, 4.2vw, 3rem)
+    }
+    #header-div ul{
+        width: 86%;
+    }
+    
+    #main-div{
+        background-color: #D6C5B4;
+        position: relative;
+        padding: clamp(46px, 6vw, 55px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #main-section{
+        /*width: clamp(300px, 90vw, 800px);*/
+        width: 94%;
+        height: clamp(400px, 74.4vh, 844px);
+        background-color: rgba(255, 255, 255, 22%);
+        padding: 6%;
+        border-radius: var(--5pxBorderRadius);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    fieldset #submit-btn{
+        max-width: 55%;
+    }
+    #main-deco-div{
+        background: url("images/main_deco_bild.png");
+        background-size: cover;
+        width: 96%;
+        height: 55%;
+        border-radius: 0.3em;
+    }
+    #img-schnee, #img-jm, #img-schiff, #main-motto-div{
+        position: absolute;
+        border-radius: var(--5pxBorderRadius);
+    }
+    #img-schnee{
+        width: 28.44%;
+        left: 13.77%;
+        top: 11%;
+        z-index: 1;
+    }
+    #img-jm{
+        width: 38.6%;
+        top: 9%;
+        right: 13.77%;
+        z-index: 2;
+    }
+    #img-schiff{
+        width: 46%;
+        left: 8.8%;
+        bottom: 10%;
+        opacity: 0.9;
+        z-index: 0;
+    }
+    #main-motto-div{
+        background-color: white;
+        width: 30.8%;
+        padding: 3%;
+        height: 50%;
+        bottom: 10%;
+        right: 9.7%;
+        opacity: 0.8;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #kontakt-div{
+        position: static;
+        height: fit-content;
+        justify-self: center;
+    }
+    #kontakt-btn{
+        font-size: var(--32pxfontSize);
+        padding: 2.1vw 7vw;
+    }
+    #linkedin-icon{
+        width: 6.2vw;
+        height: 6.2vw;;
+    }
+    #projekt-btn{
+        justify-self:center;
+        display: inline-block;
+        background-color: #768FA8;
+        width: 80%;
+        height: clamp(120px, 11.9vh, 200px);
+        border-radius: var(--8pxBorderRadius);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #projekt-btn span{
+        background-color: #5A7FA5;
+        width: 90%;
+        height: 78%;
+        border-radius: var(--5pxBorderRadius);
+        text-align: center;
+        align-content: center;
+        font-size: var(--32pxfontSize);
+        color: white;
+        letter-spacing: 0.4rem;
+        font-weight: 600;
+    }
+    #small-deco-div{
+        /*width: 230px;*/
+        height: 100%;
+        width: 20vw;
+        height: clamp(200px, 30vw, 300px);
+        background: url("images/small_deco-beige.png");
+        background-size: cover;
+        grid-row: 1/span 2;
+        justify-self: self-end;
+    }
+    #grid-div{
+        width: 80%;
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        row-gap: clamp(40px,5vw, 60px);
+    }
+    .active-link{
+        border: solid 3px #5A7FA5;
+    }
+    #header-div ul li a:focus{
+        border: 2px solid #768FA8;
+    }
+    /*SUBSEITEN */
+    #subseiten-main-section, #subseiten-deco-leiste{
+        width: 86%;
+    }
+   
+    
+}
+
+/*DESCTOPS*/
+@media only screen and (min-width: 1200px){
+    #container{
+        width: 100%;
+    }
+   main{
+    background-color: #D6C5B4;
+   }
+    #header-div, #main-div, footer{
+        max-width: clamp(1200px, 117vw, 1600px);
+        margin: auto;
+    }
+    #header-div{
+        padding: clamp(35px, 4vw, 50px) clamp(60px, 6vw, 80px) clamp(20px, 3vw, 35px);
+    }
+    #header-div h1{
+       margin-bottom: clamp(30px, 3.4vw, 40px);
+    }
+    #header-div ul li a{
+        font-size: clamp(2rem, 1.8vw, 3rem);
+    }
+    #main-div{
+        display: flex;
+        flex-direction: row;
+        gap: clamp(60px, 5vw, 75px);
+        justify-content: space-between;
+        position: relative;
+        padding-top: clamp(50px, 4.2vw, 65px);
+    }
+    #main-section{
+        padding: 0;
+        height: clamp(390px, 33vw, 500px);
+        width: clamp(550px, 46vw, 700px);
+        background: url("images/main_deco_bild.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main-deco-div, #small-deco-div, #img-schnee{
+        display: none;
+    }
+    #img-schiff{
+        position: static;
+        width: 90%;
+        height: 90%;
+        opacity: 0.7;
+    }
+    #main-motto-div{
+        top: clamp(180px, 15vw, 230px);
+        height: clamp(180px, 15vw, 220px);
+        position: absolute;
+        right: clamp(-40px, -3.3vw, -60px);
+    }
+    #img-jm{
+        width: clamp(220px, 19vw, 280px);
+        top: clamp(180px, 15vw, 230px);
+        left: clamp(111px, 9.2vw, 150px)
+    }
+    #grid-div{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: clamp(480px, 40vw, 560px);
+        height: clamp(390px, 33vw, 500px);
+        padding: clamp(50px, 4vw, 70px);
+        background-color: rgba(255, 255, 255, 22%);
+        border-radius: clamp(10px, 0.8vw, 20px);
+    }
+    #projekt-btn{
+      width: clamp(310px, 25vw,420px);
+      height: clamp(135px, 11vw, 170px);
+      align-self: center;
+    }
+    #kontakt-div{
+        width: clamp(310px, 25vw,420px);
+        gap: 0;
+        justify-content: space-between;
+    }
+    #kontakt-btn{
+        padding: clamp(15px, 1.4vw, 32px) clamp(50px, 4.2vw, 90px);
+        font-weight: 400;
+    }
+    #linkedin-icon{
+      width: clamp(45px, 3.8vw, 80px);
+      height: clamp(45px, 3.8vw, 80px);
+    }
+    #header-div{
+        position: relative;
+    }
+    #deco-circle-div{
+        display: block;
+        position: absolute;
+        bottom: clamp(-40px, -2.4vw, -25px);
+        left: clamp(700px, 62vw, 900px);
+        z-index: 1;
+    }
+    .circle{
+        display: inline-block;
+        height: clamp(50px, 4.2vw, 80px);
+        width: clamp(50px, 4.2vw, 80px);
+        background-color: lightgray;
+        border-radius: 50%;
+    }
+    /*SUBSEITEN */
+    #subseiten-deco-leiste{
+        display: none;
+    }
+    #subseiten-main-section{
+        border-left: solid clamp(15px, 1.25vw, 20px) var(--blue);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    #projekte-section-header{
+        color: white;
+        display: block;
+        
+    }
+    #subseiten-main-section.projekte{
+        background-image: none;
+        background-color: #3E7F6C;
+        padding: 3%;
+        border: none;
+        border-radius: var(--5pxBorderRadius);
+    }
+    #projekt-wrapper{
+        background-color: white;
+        padding: 5% 9% 3%;
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-template-rows: auto auto auto;
+    }
+    #projekt-header{
+      grid-column: 1 / -1;
+      
+    }
+
+    
+    #projekt-link-btn, #projekt-iframe, #projekt-img-link{
+       align-self: center;
+       cursor: pointer;
+       
+    }
+    #projekt-link-btn{
+       padding: clamp(15px, 1.2vw, 20px) clamp(20px, 2.1vw, 38px);
+       justify-self: end;
+       margin-left: auto;
+    }
+    
+    #projekt-img-link img{
+        justify-self: center;
+        width: 80%;
+    }
+}

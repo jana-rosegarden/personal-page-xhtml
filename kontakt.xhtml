@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <title>Kontaktformular zu Jana Engenhorst </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Itim&amp;family=Just+Me+Again+Down+Here&amp;family=Kaushan+Script&amp;family=La+Belle+Aurore&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrapper">
+      
+      <header id="header-div"> 
+        <h1>Jana Engenhorst Persönliche Webseite</h1>
+        <nav> 
+          <ul> 
+            <li class="li-home-set"> 
+              <a href="index.xhtml" id="mobile-homepage-link">
+                <img src="images/home_icon.png" alt="Das Bild von einem Haus, das dient als Homepage-icon"  id="mobile-homepage-icon"/>
+              </a> 
+              <a href="index.xhtml" class="tablet-only homelink"> <img src="images/home_icon.png" alt="Das Bild von einem Haus, das dient als Homepage-icon"  id="homepage-icon"/> Home</a>
+            </li>
+            <li> <a href="about.xhtml"> Über mich </a></li>
+            <li class="mobile-only" id="hamburger-icon"> <img src="images/icon_menu.png" alt="Das Bild von Hamburger-icon" style="width: 2rem;"/></li>
+            <li class="tablet-only "><a href="lebenslauf.xhtml" >Lebenslauf</a></li>
+            <li class="tablet-only"> <a href="bildung.xhtml" >Bildung</a></li>
+          </ul>
+        </nav>
+
+        <div id="deco-circle-div">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+      </header>
+
+      
+      <main > 
+        <div id="main-div" class="mobile-subseiten-main-div">
+
+        <div id="mobile-sidenav">
+          <span id="nav-close-btn">&times;</span>
+          <a href="about.xhtml">Über mich</a>
+          <a href="lebenslauf.xhtml">Lebenslauf</a>
+          <a href="bildung.xhtml">Bildung</a>
+        </div>
+        
+
+        <section id="formular-container"> 
+          <form action="https://formspree.io/f/mdkgvbjq" method="POST" id="kontact-form-wrapper">
+            <fieldset id="kontakt-form">
+              <legend> Kontakt </legend>
+              <h2>Haben Sie Fragen? Kontaktieren Sie mich</h2>
+
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Ihre Name" required="required"/>
+
+              <label for="email">E-Mail</label>
+              <input type="email" name="email" id="email" placeholder="Ihre E-Mail" required="required"/>
+
+              <label for="message">Ihre Nachricht</label>
+              <textarea name="message" id="message" cols="5" rows="8" placeholder="Ihre Nachricht hier" required="required"></textarea>
+
+              <input type="submit" name="submit-btn" id="submit-btn" value="absenden"/>
+            </fieldset>
+            </form>
+
+            <div id="thank-you-message" style="display: none;">
+              <h2> Kontakt </h2>
+              <p>Vielen Dank für Ihre Nachricht! Ich melde mich bei Ihnen bald</p>
+            </div>
+        </section>
+        
+        <div id="grid-div"> 
+          <a href="projekte.xhtml" id="projekt-btn" class="subseiten-btn"> <span> Projekte</span> </a>
+          <div id="kontakt-div" class="mobile-subseiten-kontakt-div"> 
+            <a href="kontakt.xhtml" id="kontakt-btn" class="mobile-subseiten-kontakt-btn"> Kontakt </a>
+            <a href="about.xhtml"><img src="images/linkedin-logo.png" alt="Linkedin Icon" id="linkedin-icon"/></a>
+          </div>
+          <div class="tablet-only" id="small-deco-div"></div>
+        </div>
+       </div>
+      </main>
+      
+      <footer> 
+        <div id="impressum"> 
+          <p>Jana Engenhorst</p>
+          <p>Josef-Priller-Str. 20, 86159 Augsburg </p>
+          <p>jana@engenhor.st</p>
+        </div>
+        <p>&copy; Jana Engenhorst Alle Rechte vorbehalten;</p>
+      </footer>
+
+      
+    </div>
+    
+  </div>
+  
+</body>
+<script src="script.js" defer="defer"></script>
+</html>
