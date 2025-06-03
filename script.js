@@ -2,6 +2,16 @@ const openMobileNav = document.getElementById("hamburger-icon");
 const closeMobileNav = document.getElementById("nav-close-btn");
 const mobileSidenav = document.getElementById("mobile-sidenav");
 
+const impressumDiv = document.getElementById("impressum")
+
+
+
+
+impressumDiv.addEventListener("click", function(){
+  impressumDiv.style.backgroundColor = "red"
+  console.log(impressumDiv)
+})
+
 const links = document.querySelectorAll("nav a");
 const currentPage = window.location.pathname.split("/").pop();
 
