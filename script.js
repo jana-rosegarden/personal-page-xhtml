@@ -101,9 +101,10 @@ if (visualLinks) {
 
 if (impressumHeader) {
   impressumHeader.addEventListener("click", function(){
-      impressumDiv.style.display = "block"
-  }) 
+    impressumDiv.style.display = "block";
+  }); 
+
   impressumDiv.addEventListener("click", function(){
-    impressumDiv.style.display = "none"
-  })
-} 
+    impressumDiv.style.display = "none";
+  });
+}
