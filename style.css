@@ -151,8 +151,12 @@ footer p{
     cursor: pointer;
 }
 #impressum{
+    display: none;
     text-align: left;
     margin-bottom: 3%;
+}
+#impressum-header{
+    margin-bottom: var(--5pxBorderRadius);
 }
 /*SUBSEITEN für Alle */
 #mobile-visual-nav{

@@ -2,15 +2,10 @@ const openMobileNav = document.getElementById("hamburger-icon");
 const closeMobileNav = document.getElementById("nav-close-btn");
 const mobileSidenav = document.getElementById("mobile-sidenav");
 
+const impressumHeader = document.getElementById("impressum-header")
 const impressumDiv = document.getElementById("impressum")
 
 
-
-
-impressumDiv.addEventListener("click", function(){
-  impressumDiv.style.backgroundColor = "red"
-  console.log(impressumDiv)
-})
 
 const links = document.querySelectorAll("nav a");
 const currentPage = window.location.pathname.split("/").pop();
@@ -101,3 +96,14 @@ if (visualLinks) {
     }
   });
 };
+
+//Impressum div anzeigen lassen
+
+if (impressumHeader) {
+  impressumHeader.addEventListener("click", function(){
+      impressumDiv.style.display = "block"
+  }) 
+  impressumDiv.addEventListener("click", function(){
+    impressumDiv.style.display = "none"
+  })
+} 
