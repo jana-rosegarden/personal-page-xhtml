@@ -5,7 +5,8 @@ const mobileSidenav = document.getElementById("mobile-sidenav");
 const impressumHeader = document.getElementById("impressum-header")
 const impressumDiv = document.getElementById("impressum")
 
-
+const datenschutzHeader = document.getElementById("datenschutz-header")
+const datenschutzDiv = document.getElementById("datenschutz-div")
 
 const links = document.querySelectorAll("nav a");
 const currentPage = window.location.pathname.split("/").pop();
@@ -97,7 +98,7 @@ if (visualLinks) {
   });
 };
 
-//Impressum div anzeigen lassen
+//Impressum und datenschutz div anzeigen lassen
 
 if (impressumHeader) {
   impressumHeader.addEventListener("click", function(){
@@ -106,5 +107,15 @@ if (impressumHeader) {
 
   impressumDiv.addEventListener("click", function(){
     impressumDiv.style.display = "none";
+  });
+}
+
+if (datenschutzHeader) {
+  datenschutzHeader.addEventListener("click", function(){
+    datenschutzDiv.style.display = "block";
+  }); 
+
+ datenschutzDiv.addEventListener("click", function(){
+    datenschutzDiv.style.display = "none";
   });
 }

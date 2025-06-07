@@ -124,13 +124,42 @@ footer{
     text-align: center;
     padding: clamp(20px, 4.8vw, 50px);
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px pink;
+    justify-content: center;
+    
 }
 footer p{
     font-size: clamp(15px, 3.8vw, 18px);
     font-weight: 300;
     color: #3D3D3D;
 }
-
+#footer-copyr{
+    flex: 0 0 100%;
+    margin-top: var(--10pxBorderRadius);
+}
+.footer-div{
+    flex: 0 0 50%;
+    text-align: left;
+    padding: var(--5pxBorderRadius);
+    border: solid 2px orangered;
+    align-self: center;
+}
+#impressum{
+    display: none;
+    text-align: left;
+    margin-bottom: 3%;
+}
+footer h3{
+    margin-bottom: var(--5pxBorderRadius);
+}
+footer p{
+    margin-bottom: var(--5pxBorderRadius);
+}
+#datenschutz-div{
+    display: none;
+}
 #kontakt-btn{
    text-align: center;
    /*padding: 3.9vw 11vw;*/
@@ -150,14 +179,7 @@ footer p{
 #kontakt-div a, #kontakt-btn, #submit-btn{
     cursor: pointer;
 }
-#impressum{
-    display: none;
-    text-align: left;
-    margin-bottom: 3%;
-}
-#impressum-header{
-    margin-bottom: var(--5pxBorderRadius);
-}
+
 /*SUBSEITEN für Alle */
 #mobile-visual-nav{
     display: none;
