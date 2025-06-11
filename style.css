@@ -237,7 +237,8 @@ footer p{
 .subseiten-artikel-header{
    font-size: 1.5rem;
    font-weight: 400;
-   margin-bottom: clamp(35px, 8.5vw, 40px);
+   margin-bottom: var(--20pxfontSize);
+   margin-top: var(--10pxBorderRadius);
 }
 #subseiten-main-section p{
    line-height: 1.8;
@@ -260,6 +261,11 @@ footer p{
     border-radius: var(--8pxBorderRadius);
     margin: auto;
 }
+#foto-lebenslauf{
+    width: 200px;
+    border-top-left-radius: 50%;
+}
+
 #formular-container{
     margin: auto;
     margin-top: clamp(10px, 2.4vw, 15px);
