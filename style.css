@@ -66,9 +66,6 @@ a{
     padding: clamp(40px, 10vw, 50px);
     padding-bottom: clamp(16px, 4.5vw, 20px);
 }
-#header-div h1{
-    color: #A5805A;
-}
 
 #header-div ul{
     display: flex;
@@ -77,6 +74,16 @@ a{
 }
 #header-div h1{
     font-family: "Kaushan Script", cursive;
+    color: #A5805A; /*alte Farbe */
+    color: #917050;
+}
+#header-div h2{
+    text-align: right;
+    margin-bottom: clamp(30px, 8.4vw, 40px);
+    color: #525252;
+    font-weight: 400;
+    font-size: var(--20pxfontSize);
+    letter-spacing: 3px;
 }
 nav a{
     font-size: var(--20pxfontSize);
@@ -379,11 +386,12 @@ fieldset #submit-btn{
 
 @media only screen and (max-width: 767px) {
     #header-div h1{
-        margin-bottom: clamp(14px, 3.4vw, 25px);
+        margin-bottom: var(--8pxBorderRadius);
         margin-left: 10%;
+        font-size: clamp(1.625rem, 7vw, 2rem);
     }
     #header-div ul{
-        max-width: 80%;
+        max-width: 90%;
     }
     #mobile-homepage-icon{
         width: clamp(50px, 12vw, 55px);
@@ -527,10 +535,12 @@ fieldset #submit-btn{
     }
     #header-div h1{
         display: inline-block;
-        margin-bottom: clamp(40px, 10vw, 60px);
+        margin-bottom: var(--10pxBorderRadius);
         margin-left: 25%;
-        color: #D6C5B4;
         font-size: clamp(1.8rem, 4.2vw, 3rem)
+    }
+    #header-div h2{
+        font-size: clamp(1.563rem, 2vw, 2.188rem);
     }
     #header-div ul{
         width: 86%;
@@ -676,7 +686,7 @@ fieldset #submit-btn{
         padding: clamp(35px, 4vw, 50px) clamp(60px, 6vw, 80px) clamp(20px, 3vw, 35px);
     }
     #header-div h1{
-       margin-bottom: clamp(30px, 3.4vw, 40px);
+       margin-bottom: var(--10pxBorderRadius);
     }
     #header-div ul li a{
         font-size: clamp(2rem, 1.8vw, 3rem);
