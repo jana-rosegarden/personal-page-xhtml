@@ -131,6 +131,24 @@ nav a{
     transition: 0.3s;
 }
 
+#main-motto-div{
+        background-color: white;
+        width: 30.8%;
+        padding: 3%;
+        height: 50%;
+        bottom: 10%;
+        right: 9.7%;
+        opacity: 0.8;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+#main-motto-div p{
+    line-height: 1.5;
+}
+
 #kontakt-div{
     position: absolute;
     display: flex;
@@ -571,19 +589,7 @@ fieldset #submit-btn{
         opacity: 0.9;
         z-index: 0;
     }
-    #main-motto-div{
-        background-color: white;
-        width: 30.8%;
-        padding: 3%;
-        height: 50%;
-        bottom: 10%;
-        right: 9.7%;
-        opacity: 0.8;
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
     #kontakt-div{
         position: static;
         height: fit-content;
@@ -704,7 +710,7 @@ fieldset #submit-btn{
     }
     #main-motto-div{
         top: clamp(180px, 15vw, 230px);
-        height: clamp(180px, 15vw, 220px);
+        height: clamp(180px, 20vw, 260px);
         position: absolute;
         right: clamp(-40px, -3.3vw, -60px);
     }
