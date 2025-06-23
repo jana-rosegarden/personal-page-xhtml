@@ -261,10 +261,30 @@ footer p{
     border-radius: var(--8pxBorderRadius);
     margin: auto;
 }
+
+/*Lebenslauf */
+
 #foto-lebenslauf{
     width: 200px;
     border-top-left-radius: 50%;
 }
+#lebenslauf-inhalt-div h3, h4, h5{
+    font-weight: 400;
+}
+
+#lebenslauf-inhalt-div h3{
+    margin: 24px 0;
+}
+#lebenslauf-inhalt-div h4{
+    margin: 18px 0;
+}
+#lebenslauf-inhalt-div h5{
+    margin: 16px 0;
+}
+#beruf-div div:nth-child(even) {
+    background-color: lavender;
+}
+/*Kontakt Form */
 
 #formular-container{
     margin: auto;
