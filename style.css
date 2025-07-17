@@ -268,7 +268,24 @@ footer p{
     width: 200px;
     border-top-left-radius: 50%;
 }
-#lebenslauf-inhalt-div h3, h4, h5{
+#lebenslauf-header-div{
+    display: flex;
+    gap: var(--20pxfontSize);
+}
+#lebennslauf-header-info-div{
+    align-self: center;
+    font-weight: 400;
+}
+.subseiten-artikel-header.lebenslauf{
+    display: none;
+}
+
+#beruf-div div, #ausbildung-div div{
+    padding: var(--5pxBorderRadius);
+    border-radius: var(--5pxBorderRadius);
+}
+
+#lebenslauf-inhalt-div h4, h5{
     font-weight: 400;
 }
 
@@ -282,8 +299,14 @@ footer p{
     margin: 16px 0;
 }
 #beruf-div div:nth-child(even) {
-    background-color: lavender;
+    background-color: #f0ebe6;
+    padding: var(--5pxBorderRadius);
 }
+
+#ausbildung-div div:nth-child(even){
+    background-color: rgb(234, 231, 231);
+}
+
 /*Kontakt Form */
 
 #formular-container{
