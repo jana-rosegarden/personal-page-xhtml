@@ -4,11 +4,18 @@
     --blue: #5A7FA5;
     --orangeRed: #FE4501; 
     --amaranth: #E41B4A;
+    --22pxfontSize: clamp(1.375rem, 5.4vw, 1.438rem);
     --20pxfontSize: clamp(1.2rem, 4.8vw, 1.3rem);
     --32pxfontSize: clamp(2rem, 2.5vw, 2.2rem);
     --5pxBorderRadius: clamp(5px, 1.21vw, 10px);
     --8pxBorderRadius: clamp(8px, 2vw, 14px);
     --10pxBorderRadius: clamp(10px, 1.3vw, 18px);
+    --16px: clamp(16px, 3.9vw, 17px);
+    --18px: clamp(18px, 4.4vw, 19px);
+    --20px: clamp(20px, 4.9vw, 21px);
+    --22px: clamp(22px, 5.8vw, 24px);
+    --24px: clamp(24px, 5.8vw, 25px);
+    --28px: clamp(28px, 6.8vw, 29px)
 }
 
 *{
@@ -242,6 +249,7 @@ footer p{
 }
 #subseiten-main-section p{
    line-height: 1.8;
+   font-size: clamp(1.25rem, 5vw, 1.375rem);
 }
 #subseiten-main-section{
     max-width: 86%;
@@ -266,10 +274,12 @@ footer p{
 
 #foto-lebenslauf{
     width: 200px;
+    height: fit-content;
     border-top-left-radius: 50%;
 }
 #lebenslauf-header-div{
     display: flex;
+    flex-direction: column;
     gap: var(--20pxfontSize);
 }
 #lebennslauf-header-info-div{
@@ -285,18 +295,27 @@ footer p{
     border-radius: var(--5pxBorderRadius);
 }
 
-#lebenslauf-inhalt-div h4, h5{
-    font-weight: 400;
-}
-
-#lebenslauf-inhalt-div h3{
-    margin: 24px 0;
-}
-#lebenslauf-inhalt-div h4{
-    margin: 18px 0;
+#lebenslauf-inhalt-div{
+    font-size: var(--20pxfontSize);
 }
 #lebenslauf-inhalt-div h5{
-    margin: 16px 0;
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+}
+
+
+.subseiten-h3{
+    margin: clamp(22px, 5.8vw, 24px) 0;
+}
+.subseiten-h4{
+    margin: var(--18px) 0;
+    font-size: var(--22pxfontSize);
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+.subseiten-h5{
+    margin: var(--16px) 0;
+    font-size: var(--20pxfontSize);
 }
 #beruf-div div:nth-child(even) {
     background-color: #f0ebe6;
@@ -309,6 +328,29 @@ footer p{
 
 /*Bildung */
 
+#bildung-img-div{
+    display: flex;
+    margin-bottom: clamp(28px, 7.3vw, 32px);
+}
+#bildung-img-div img{
+    height: fit-content;
+}
+.subseiten-artikel-header.bildung{
+    font-weight: 600;
+    margin-bottom: clamp(35px, 9.7vw, 42px);
+}
+.bildung-p{
+    margin-bottom: clamp(18px, 4.9vw, 22px);
+}
+
+.subseiten-h3.bildung{
+    font-size: var(--22pxfontSize);
+}
+#bildung-elternzeit{
+    background-color: #edd8d8;
+    padding: var(--5pxBorderRadius) var(--16px) var(--5pxBorderRadius);
+    border-radius: var(--5pxBorderRadius);
+}
 /*Kontakt Form */
 
 #formular-container{
@@ -717,8 +759,12 @@ fieldset #submit-btn{
     #subseiten-main-section, #subseiten-deco-leiste{
         width: 86%;
     }
-   
-    
+    #subseiten-main-section p{
+        font-size: var(--20pxfontSize);
+    }
+    #lebenslauf-header-div{
+        flex-direction: row;
+    }
 }
 
 /*DESCTOPS*/
