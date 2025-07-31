@@ -461,6 +461,7 @@ fieldset #submit-btn{
 }
 
 /* NUR ab Tablet - anpassen, 27.05 */
+/* Projects */
 #subseiten-main-section.projekte{
     background: url("images/projekt-backdeco.png");
     background-size: cover;
@@ -499,7 +500,11 @@ fieldset #submit-btn{
    font-size: var(--20pxfontSize);
    cursor: pointer;
 }
-
+#projekt-iframe{
+    height: clamp(180px, 48vw, 200px);
+    
+    overflow: hidden;
+}
 
 /*MOBILE*/
 @media (max-height: 600px) {
