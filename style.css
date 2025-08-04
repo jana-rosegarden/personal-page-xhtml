@@ -471,8 +471,7 @@ fieldset #submit-btn{
    font-size: clamp(20px, 5vw, 30px);
    font-weight: 600;
    color: var(--beige);
-   margin-bottom: clamp(10px, 2.4vw, 25px);
-   margin-bottom: 30px;
+   margin-bottom: clamp(28px, 7.3vw, 30px);
 }
 #projekt-wrapper{
     border-radius: var(--5pxBorderRadius);
@@ -480,9 +479,7 @@ fieldset #submit-btn{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: clamp(17px, 14.2vw, 21px) ;
-    gap: 26px;
-    
+    gap: clamp(24px, 6.3vw,26px);
 }
 
 #projekt-header{
@@ -503,7 +500,7 @@ fieldset #submit-btn{
    font-size: var(--20pxfontSize);
    font-weight: 700;
    cursor: pointer;
-   letter-spacing: 3px;
+   letter-spacing: clamp(2px, 0.8vw, 3px);
 }
 
 #projekt-img{

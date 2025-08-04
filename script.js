@@ -1,3 +1,5 @@
+import { projektArr } from "./projekt.js";
+
 const openMobileNav = document.getElementById("hamburger-icon");
 const closeMobileNav = document.getElementById("nav-close-btn");
 const mobileSidenav = document.getElementById("mobile-sidenav");
@@ -15,6 +17,10 @@ const visualLinks = document.getElementsByClassName("visual-a");
 
 const form = document.getElementById('kontact-form-wrapper');
 const thankYouMessage = document.getElementById('thank-you-message');
+
+const projektWrapper = document.getElementById("projekt-wrapper")
+
+let projektEl = []
 
 
 if (openMobileNav && mobileSidenav) {
@@ -119,3 +125,29 @@ if (datenschutzHeader) {
     datenschutzDiv.style.display = "none";
   });
 }
+
+
+/*id: 1,
+        name: "projectName",
+        image: "images/projekts-img",
+        description: "Here is a description of an project",
+        icons: "images/projects-img/html.png",
+        link: "https://resplendent-pixie-553bac.netlify.app" */
+
+/* Projekt elemente mit map.() angeben */
+
+/* projekt-div Template 
+
+<h2 id="projekt-header" > Guess Word Game</h2>
+                <h3 id="projekt-subheader">Ein kleines Spiel: beantworte die Frage und gewinn. Kennst du das Wort nicht? Errate! Du hast dafür 6 Versuche</h3>
+                <a href="https://resplendent-pixie-553bac.netlify.app" id="projekt-link-btn">zum Projekt</a>
+                <a href="https://resplendent-pixie-553bac.netlify.app" id="projekt-img-a"><img src="images/projekts-img/game.png" alt="Das Bild zeigt die erste Seite eines Web-Projekts" id="projekt-img"></a>
+                <div id="projekt-icon-div">
+                  <img src="images/projekts-img/HTML.png" alt="">
+                  <img src="images/projekts-img/CSS.png" alt="">
+                  <img src="images/projekts-img/JS.png" alt="">
+                  <img src="images/projekts-img/REACT.png" alt="">
+                  <img src="images/projekts-img/Figma.png" alt="">
+                </div>
+
+ */
