@@ -469,9 +469,10 @@ fieldset #submit-btn{
 }
 #projekte-section-header{
    font-size: clamp(20px, 5vw, 30px);
-   font-weight: 500;
+   font-weight: 600;
    color: var(--beige);
    margin-bottom: clamp(10px, 2.4vw, 25px);
+   margin-bottom: 30px;
 }
 #projekt-wrapper{
     border-radius: var(--5pxBorderRadius);
@@ -480,11 +481,13 @@ fieldset #submit-btn{
     display: flex;
     flex-direction: column;
     gap: clamp(17px, 14.2vw, 21px) ;
+    gap: 26px;
+    
 }
 
 #projekt-header{
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: var(--22pxfontSize);
 }
 #projekt-subheader{
     font-weight: 400;
@@ -498,14 +501,25 @@ fieldset #submit-btn{
    padding: clamp(16px, 3.9vw, 20px) clamp(36px, 6vw, 45px);
    border-radius: 1.5rem;
    font-size: var(--20pxfontSize);
+   font-weight: 700;
    cursor: pointer;
-}
-#projekt-iframe{
-    height: clamp(180px, 48vw, 200px);
-    
-    overflow: hidden;
+   letter-spacing: 3px;
 }
 
+#projekt-img{
+    display: block;
+    width: 90%;
+    border-radius: var(--10pxBorderRadius);
+    
+}
+#projekt-img:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+
+}
+#projekt-icon-div img{
+     width: 120px;
+}
 /*MOBILE*/
 @media (max-height: 600px) {
     #mobile-sidenav{
@@ -945,22 +959,21 @@ fieldset #submit-btn{
     }
     #projekt-header{
       grid-column: 1 / -1;
-      
     }
 
-    #projekt-link-btn, #projekt-iframe, #projekt-img-link{
+    #projekt-link-btn {
        align-self: center;
        cursor: pointer;
-       
     }
     #projekt-link-btn{
        padding: clamp(15px, 1.2vw, 20px) clamp(20px, 2.1vw, 38px);
        justify-self: end;
        margin-left: auto;
     }
-    
-    #projekt-img-link img{
-        justify-self: center;
-        width: 80%;
+    #projekt-img-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
+   
 }
