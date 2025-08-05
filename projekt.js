@@ -1,18 +1,18 @@
 let projektArr = [
     {
         id: 1,
-        name: "projectName",
-        image: "images/projekts-img",
-        description: "Here is a description of an project",
-        icons: "images/projects-img/html.png",
+        name: "Guess Word Game",
+        image: "images/projekts-img/game.png",
+        description: "Ein kleines Spiel: beantworte die Frage und gewinn. Kennst du das Wort nicht? Errate! Du hast dafür 6 Versuche",
+        icons: ["images/projekts-img/HTML.png", "images/projekts-img/CSS.png", "images/projekts-img/JS.png", "images/projekts-img/Figma.png", "images/projekts-img/REACT.png" ],
         link: "https://resplendent-pixie-553bac.netlify.app"
     },
     {
-        id: 1,
+        id: 2,
         name: "projectName",
         image: "images/projekts-img",
         description: "Here is a description of an project",
-        icons: "images/projects-img/html.png",
+        icons: ["images/projekts-img/HTML.png"],
         link: "https://resplendent-pixie-553bac.netlify.app"
     }
 

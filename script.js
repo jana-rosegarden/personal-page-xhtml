@@ -20,6 +20,7 @@ const thankYouMessage = document.getElementById('thank-you-message');
 
 const projektWrapper = document.getElementById("projekt-wrapper")
 
+
 let projektEl = []
 
 
@@ -127,14 +128,6 @@ if (datenschutzHeader) {
 }
 
 
-/*id: 1,
-        name: "projectName",
-        image: "images/projekts-img",
-        description: "Here is a description of an project",
-        icons: "images/projects-img/html.png",
-        link: "https://resplendent-pixie-553bac.netlify.app" */
-
-/* Projekt elemente mit map.() angeben */
 
 /* projekt-div Template 
 
@@ -151,4 +144,32 @@ if (datenschutzHeader) {
                 </div>
 
  */
-console.log(projektArr)
+
+
+projektEl = projektArr.map(item =>{
+  return(
+  `
+        <h2 class="projekt-header" > ${item.name}</h2>
+        <h3 class="projekt-subheader">${item.description}</h3>
+        <a href="${item.link}" class="projekt-link-btn">zum Projekt</a>
+        <a href="${item.link}" class="projekt-img-a"><img src="${item.image}" alt="Das Bild zeigt die erste Seite eines Web-Projekts" class="projekt-img"></a>
+        <div class="projekt-icon-div">
+          <img src="${item.icons}" alt="">
+          <img src="${item.icons}" alt="">
+          ${item.icons.map(icon =>{
+            return(
+              `<img src="${icon}" alt="">`
+            )
+          })}
+        </div>
+    
+    `
+  )
+})
+
+
+
+if (projektWrapper) {
+  projektWrapper.innerHTML = projektEl
+}
+

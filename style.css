@@ -507,16 +507,54 @@ fieldset #submit-btn{
     display: block;
     width: 90%;
     border-radius: var(--10pxBorderRadius);
-    
 }
 #projekt-img:hover{
     transform: scale(1.02);
     transition: transform 0.3s ease;
-
 }
 #projekt-icon-div img{
      width: 120px;
 }
+/*Id auf Class Umstellung */
+
+.projekt-header{
+    font-weight: 600;
+    font-size: var(--22pxfontSize);
+}
+
+.projekt-subheader{
+    font-weight: 400;
+    font-size: var(--20pxfontSize);
+}
+
+.projekt-link-btn{
+   display: inline-block;
+   margin-right: auto;
+   background-color: #A5805A;
+   color: white;
+   padding: clamp(16px, 3.9vw, 20px) clamp(36px, 6vw, 45px);
+   border-radius: 1.5rem;
+   font-size: var(--20pxfontSize);
+   font-weight: 700;
+   cursor: pointer;
+   letter-spacing: clamp(2px, 0.8vw, 3px);
+}
+.projekt-img{
+    display: block;
+    width: 90%;
+    border-radius: var(--10pxBorderRadius);
+}
+
+.projekt-img:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.projekt-icon-div img{
+     width: 120px;
+}
+
+
 /*MOBILE*/
 @media (max-height: 600px) {
     #mobile-sidenav{
@@ -957,8 +995,14 @@ fieldset #submit-btn{
     #projekt-header{
       grid-column: 1 / -1;
     }
-
+    .projekt-header{
+      grid-column: 1 / -1;
+    }
     #projekt-link-btn {
+       align-self: center;
+       cursor: pointer;
+    }
+    .projekt-link-btn {
        align-self: center;
        cursor: pointer;
     }
@@ -967,7 +1011,17 @@ fieldset #submit-btn{
        justify-self: end;
        margin-left: auto;
     }
+    .projekt-link-btn{
+       padding: clamp(15px, 1.2vw, 20px) clamp(20px, 2.1vw, 38px);
+       justify-self: end;
+       margin-left: auto;
+    }
     #projekt-img-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .projekt-img-a{
     display: flex;
     justify-content: center;
     align-items: center;
