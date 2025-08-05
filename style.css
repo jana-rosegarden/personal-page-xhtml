@@ -551,7 +551,8 @@ fieldset #submit-btn{
 }
 
 .projekt-icon-div img{
-     width: 120px;
+     max-width: 90px;
+     
 }
 
 

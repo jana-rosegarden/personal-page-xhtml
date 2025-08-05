@@ -154,13 +154,11 @@ projektEl = projektArr.map(item =>{
         <a href="${item.link}" class="projekt-link-btn">zum Projekt</a>
         <a href="${item.link}" class="projekt-img-a"><img src="${item.image}" alt="Das Bild zeigt die erste Seite eines Web-Projekts" class="projekt-img"></a>
         <div class="projekt-icon-div">
-          <img src="${item.icons}" alt="">
-          <img src="${item.icons}" alt="">
           ${item.icons.map(icon =>{
             return(
               `<img src="${icon}" alt="">`
             )
-          })}
+          }).join(" ")}
         </div>
     
     `

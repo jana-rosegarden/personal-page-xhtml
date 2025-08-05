@@ -9,11 +9,11 @@ let projektArr = [
     },
     {
         id: 2,
-        name: "projectName",
-        image: "images/projekts-img",
-        description: "Here is a description of an project",
-        icons: ["images/projekts-img/HTML.png"],
-        link: "https://resplendent-pixie-553bac.netlify.app"
+        name: "Landing Page",
+        image: "images/projekts-img/landing-page.png",
+        description: "Landing Page von Foto-shootingunterrichte für Paars",
+        icons: ["images/projekts-img/HTML.png", "images/projekts-img/CSS.png","images/projekts-img/responsive-design.png"],
+        link: "landing-page-j.netlify.app"
     }
 
 ]
