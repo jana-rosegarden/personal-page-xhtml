@@ -20,4 +20,4 @@ let projektArr = [
 
 
 
-export {projektArr};
+export {projektArr}

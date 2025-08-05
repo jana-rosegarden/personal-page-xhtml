@@ -1,4 +1,4 @@
-import { projektArr } from "./projekt.js";
+import {projektArr} from "./projekt.js";
 
 const openMobileNav = document.getElementById("hamburger-icon");
 const closeMobileNav = document.getElementById("nav-close-btn");
@@ -151,3 +151,4 @@ if (datenschutzHeader) {
                 </div>
 
  */
+console.log(projektArr)
