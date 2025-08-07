@@ -14,6 +14,22 @@ let projektArr = [
         description: "Landing Page von Foto-shootingunterrichte für Paars",
         icons: ["images/projekts-img/HTML.png", "images/projekts-img/CSS.png","images/projekts-img/responsive-design.png"],
         link: "landing-page-j.netlify.app"
+    },
+    {
+        id: 3,
+        name: "Passwortgenerator",
+        image: "images/projekts-img/password-generator.png",
+        description: "Passwortgenerator für Generieren ein strakes Passwort mit der Angabe der Anzahl von Symbole",
+        icons: ["images/projekts-img/HTML.png", "images/projekts-img/CSS.png", "images/projekts-img/JS.png", "images/projekts-img/Figma.png", "images/projekts-img/REACT.png" ],
+        link: "password-generator-j.netlify.app"
+    },
+    {
+        id: 4,
+        name: "Restaurant Bestellungsseite",
+        image: "images/projekts-img/restaurant-bestellung.png",
+        description: "Einfache Bestellungsseite für eine Restaurant",
+        icons: ["images/projekts-img/HTML.png", "images/projekts-img/CSS.png", "images/projekts-img/JS.png" ],
+        link: "https://restaurant-order-page-j.netlify.app/"
     }
 
 ]
