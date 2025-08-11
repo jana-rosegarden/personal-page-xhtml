@@ -28,6 +28,7 @@ body {
     font-family: "Roboto", sans-serif;
     opacity: 0;
     animation: fadeIn 0.6s ease-in forwards;
+    hyphens: auto;
   }
 
   
@@ -94,10 +95,9 @@ a{
 }
 nav a{
     font-size: var(--20pxfontSize);
-    padding: clamp(5px, 0.7vw,10px);
+    padding: clamp(5px, 0.7vw, 10px);
     border: solid 2px white;
     border-radius: var(--10pxBorderRadius);
-
 }
 #header-div ul li a:hover{
     background-color: #e8eaed;
@@ -634,20 +634,21 @@ fieldset #submit-btn{
 
     /* SUB-SEITEN */
     #mobile-visual-nav{
-        display: inline-block;
-        margin-left: clamp(40px, 9.4vw, 45px);
+        display: block;
+        margin-left: clamp(35px, 9.4vw, 45px);
         margin-bottom: clamp(20px, 5vw, 22px);
+        width: 80%;
     }
     #mobile-visual-nav ul{
         display: flex;
     }
     #mobile-visual-nav ul a{
-        font-size: 1.1rem;
+        font-size: clamp(0.938rem, 3.8vw, 1.3rem);
         font-weight: 300;
         border: none;
     }
     #mobile-visual-nav ul li+li:before{
-        padding: clamp(8px, 1.9vw, 11px);
+        
         content: "/\00a0";
     }
     .visual-nav-active-link{
@@ -659,7 +660,6 @@ fieldset #submit-btn{
         background: none;
         background-color: var(--lightBeige);
         height: fit-content;
-        
     }
     
     #projekt-btn.subseiten-btn, #kontakt-div.mobile-subseiten-kontakt-div{
