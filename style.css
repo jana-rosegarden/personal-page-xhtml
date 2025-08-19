@@ -439,7 +439,7 @@ fieldset #submit-btn{
     display: block;
     color: var(--amaranth);
     font-weight: 600;
-    margin: clamp(30px, 7.1vw, 35px);
+    margin: clamp(30px, 7.1vw, 35px) auto ;
     padding: clamp(5px, 3vw, 14px) clamp(15px, 7.1vw, 35px);
     border-radius: clamp(20px, 4.7vw, 25px);
     cursor: pointer;
