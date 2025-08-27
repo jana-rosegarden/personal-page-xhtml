@@ -324,6 +324,65 @@ footer p{
 #ausbildung-div div:nth-child(even){
     background-color: rgb(234, 231, 231);
 }
+#link-bildung-div{
+    padding: var(--10pxBorderRadius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--16px);
+}
+
+#link-bildung-div h6{
+    letter-spacing: 0.1rem;
+}
+
+#bildung-btn{
+    display: inline-block;
+    border: solid clamp(4px, 0.9vw, 5px) var(--beige);
+    cursor: pointer;
+    color: var(--beige);
+    padding: var(--10pxBorderRadius) var(--20px);
+    font-size: var(--18px);
+    font-weight: 600;
+    border-radius: var(--16px);
+}
+
+
+
+#arrow-div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-right: solid var(--beige) 7px;
+    border-bottom: solid var(--beige) 7px;
+    transform: rotate(-45deg);
+    animation: arrows 2s infinite;
+}
+.arrow:nth-child(1){
+    animation-delay: -0.4s;
+}
+
+.arrow:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+
+@keyframes arrows {
+ 0%{opacity: 0;
+    transform: rotate(-45deg);}
+ 50%{
+    opacity: 0.5;
+    transform: rotate(-45deg);
+ }
+ 100%{opacity: 1;
+    transform: rotate(-45deg);}
+}
 
 
 /*Bildung */
