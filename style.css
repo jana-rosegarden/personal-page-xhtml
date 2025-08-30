@@ -892,7 +892,6 @@ fieldset #submit-btn{
     }
     #grid-div{
         width: 80%;
-        margin-top: 10%;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
