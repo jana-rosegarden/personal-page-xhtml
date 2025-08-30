@@ -434,13 +434,34 @@ footer p{
 }
 #about-color-p-div{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--16px);
 }
 #about-color-p-div p{
     background-color: #FF9999;
     padding: var(--16px);
     border-radius: var(--8pxBorderRadius);
 }
+
+.about-color-p{
+    display: none;
+}
+.about-color-div{
+    max-width: 45%;
+    background: #FF9999;
+background: linear-gradient(178deg, rgba(255, 153, 153, 1) 52%, rgba(255, 209, 209, 1) 85%, rgba(255, 255, 255, 1) 100%);
+    margin-bottom: var(--20px);
+    text-align: center;
+    padding: var(--20px);
+    border-radius: 40px;
+    cursor: pointer;
+}
+.about-color-h{
+    font-size: var(--22pxfontSize);
+    font-weight: 400;
+}
+
+
 #about-main-img{
     border-radius: var(--8pxBorderRadius);
 }

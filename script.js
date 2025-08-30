@@ -23,6 +23,7 @@ const projektWrapper = document.getElementById("projekt-wrapper")
 
 let projektEl = []
 
+const colorDiv = document.getElementById("about-color-div-1")
 
 if (openMobileNav && mobileSidenav) {
     openMobileNav.addEventListener("click", function () {
@@ -171,3 +172,10 @@ if (projektWrapper) {
   projektWrapper.innerHTML = projektEl
 }
 
+/* Color Divs Test*/
+
+if(colorDiv){
+  colorDiv.addEventListener("click", function(){
+    
+  })
+}
