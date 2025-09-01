@@ -23,7 +23,14 @@ const projektWrapper = document.getElementById("projekt-wrapper")
 
 let projektEl = []
 
-const colorDiv = document.getElementById("about-color-div-1")
+/*Color Divs in About me Seite */
+
+const aboutColorDivCont = document.getElementById("about-color-div-container")
+
+const colorDiv0 = document.getElementById("0")
+const colorDiv1 = document.getElementById("1")
+const colorDiv2 = document.getElementById("2")
+const colorDiv3 = document.getElementById("3")
 
 if (openMobileNav && mobileSidenav) {
     openMobileNav.addEventListener("click", function () {
@@ -172,10 +179,34 @@ if (projektWrapper) {
   projektWrapper.innerHTML = projektEl
 }
 
-/* Color Divs Test*/
+/* Color Divs Hide and Showt*/
 
-if(colorDiv){
-  colorDiv.addEventListener("click", function(){
+/*
+if(colorDiv0 || colorDiv1 || colorDiv2 || colorDiv3){
+  colorDiv0.addEventListener("click", function(){
+
+    document.getElementsByClassName("about-color-p")[0].style.display === "none" ? 
+    document.getElementsByClassName("about-color-p")[0].style.display = "block" : 
+    document.getElementsByClassName("about-color-p")[0].style.display = "none"
+
     
   })
-}
+} */
+
+  const coloredDivArr = [colorDiv0, colorDiv1, colorDiv2, colorDiv3]
+
+ if(coloredDivArr){
+
+  coloredDivArr.map(item => {
+    return ( item.addEventListener("click", function(e){
+      //console.log(e.target.parentNode.id)
+      //console.log(document.getElementsByClassName("about-color-p")[e.target.parentNode.id])
+      if( document.getElementsByClassName("about-color-p")[e.target.parentNode.id].style.display === "none") {
+        document.getElementsByClassName("about-color-p")[e.target.parentNode.id].style.display = "block"
+      } else { document.getElementsByClassName("about-color-p")[e.target.parentNode.id].style.display = "none"}
+      
+    }))
+    
+  })
+
+ }
