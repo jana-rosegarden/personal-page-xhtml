@@ -204,18 +204,21 @@ if(colorDiv0 || colorDiv1 || colorDiv2 || colorDiv3){
   coloredDivArr.map(item => {
      
     if(item) { 
+      item.addEventListener("click", function(e){
+        const aboutElement = document.getElementsByClassName("about-color-p")[e.target.parentNode.id - 1];
+       aboutElement.classList.toggle("p-active")
+      })
+    }
+    
+  })
 
-    return ( item.addEventListener("click", function(e){
+ }
+
+ /* return ( item.addEventListener("click", function(e){
       //console.log(e.target.parentNode.id)
       //console.log(document.getElementsByClassName("about-color-p")[e.target.parentNode.id])
       if( document.getElementsByClassName("about-color-p")[e.target.parentNode.id - 1].style.display === "none") {
         document.getElementsByClassName("about-color-p")[e.target.parentNode.id - 1].style.display = "block"
       } else { document.getElementsByClassName("about-color-p")[e.target.parentNode.id - 1].style.display = "none"}
       
-    }))
-
-    }
-    
-  })
-
- }
+    })) */

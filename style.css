@@ -451,6 +451,10 @@ footer p{
     text-align: start;
     background: #FFFFFF;
     background: linear-gradient(178deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(247, 215, 215, 1) 92%, rgba(247, 195, 195, 1) 100%);
+    
+    
+
+
 }
 .about-color-div{
     margin-bottom: var(--20px);
@@ -472,6 +476,11 @@ footer p{
 
 #about-main-img{
     border-radius: var(--8pxBorderRadius);
+}
+
+.p-active{
+    display: block;
+
 }
 /*Kontakt Form */
 
@@ -1119,5 +1128,10 @@ fieldset #submit-btn{
     justify-content: center;
     align-items: center;
     }
-    
+    #about-color-div-container{
+        justify-content: unset;
+    }
+    .about-color-div{
+        max-width: 48%;
+    }
 }
