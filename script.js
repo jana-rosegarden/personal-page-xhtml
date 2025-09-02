@@ -27,10 +27,13 @@ let projektEl = []
 
 const aboutColorDivCont = document.getElementById("about-color-div-container")
 
-const colorDiv0 = document.getElementById("0")
+
 const colorDiv1 = document.getElementById("1")
 const colorDiv2 = document.getElementById("2")
 const colorDiv3 = document.getElementById("3")
+const colorDiv4 = document.getElementById("4")
+
+
 
 if (openMobileNav && mobileSidenav) {
     openMobileNav.addEventListener("click", function () {
@@ -193,19 +196,25 @@ if(colorDiv0 || colorDiv1 || colorDiv2 || colorDiv3){
   })
 } */
 
-  const coloredDivArr = [colorDiv0, colorDiv1, colorDiv2, colorDiv3]
+  const coloredDivArr = [colorDiv1, colorDiv2, colorDiv3, colorDiv4]
+  
 
  if(coloredDivArr){
-
+  
   coloredDivArr.map(item => {
+     
+    if(item) { 
+
     return ( item.addEventListener("click", function(e){
       //console.log(e.target.parentNode.id)
       //console.log(document.getElementsByClassName("about-color-p")[e.target.parentNode.id])
-      if( document.getElementsByClassName("about-color-p")[e.target.parentNode.id].style.display === "none") {
-        document.getElementsByClassName("about-color-p")[e.target.parentNode.id].style.display = "block"
-      } else { document.getElementsByClassName("about-color-p")[e.target.parentNode.id].style.display = "none"}
+      if( document.getElementsByClassName("about-color-p")[e.target.parentNode.id - 1].style.display === "none") {
+        document.getElementsByClassName("about-color-p")[e.target.parentNode.id - 1].style.display = "block"
+      } else { document.getElementsByClassName("about-color-p")[e.target.parentNode.id - 1].style.display = "none"}
       
     }))
+
+    }
     
   })
 
