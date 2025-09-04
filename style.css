@@ -254,8 +254,6 @@ footer p{
 }
 #subseiten-main-section{
     max-width: 86%;
-    /*height: 560px; /* hier height in anderer Unit angeben. Test-height 
-    height: clapm(560px, 136vw, 700px); */
     height: fit-content;
     margin: auto;
     margin-top: clamp(21px, 5vw, 25px);
@@ -348,8 +346,6 @@ footer p{
     border-radius: var(--16px);
 }
 
-
-
 #arrow-div{
     position: relative;
     display: flex;
@@ -373,7 +369,6 @@ footer p{
     animation-delay: -0.2s;
 }
 
-
 @keyframes arrows {
  0%{opacity: 0;
     transform: rotate(-45deg);}
@@ -384,7 +379,6 @@ footer p{
  100%{opacity: 1;
     transform: rotate(-45deg);}
 }
-
 
 /*Bildung */
 
@@ -443,7 +437,6 @@ footer p{
     justify-content: center;
 }
 
-
 .about-color-p{
     display: none;
     margin-top: var(--16px);
@@ -458,7 +451,6 @@ footer p{
     text-align: center;
     border-radius: 40px;
     cursor: pointer;
-    
 }
 .about-color-h{
     font-size: var(--22pxfontSize);
@@ -470,14 +462,12 @@ footer p{
     background: linear-gradient(178deg, rgba(255, 153, 153, 1) 52%, rgba(255, 209, 209, 1) 85%, rgba(255, 255, 255, 1) 100%);
 }
 
-
 #about-main-img{
     border-radius: var(--8pxBorderRadius);
 }
 
 .p-active{
     display: block;
-
 }
 /*Kontakt Form */
 
@@ -557,7 +547,6 @@ fieldset #submit-btn{
     line-height: 1.6 ;
 }
 
-/* NUR ab Tablet - anpassen, 27.05 */
 /* Projects */
 #subseiten-main-section.projekte{
     background: url("images/projekt-backdeco.png");
@@ -649,7 +638,6 @@ fieldset #submit-btn{
 
 .projekt-icon-div img{
      max-width: 90px;
-     
 }
 
 /*Deko und Anima */
