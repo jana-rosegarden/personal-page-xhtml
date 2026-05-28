@@ -1,5 +1,13 @@
 let projektArr = [
     {
+        id: 5,
+        name: "Smart To Do Liste",
+        image: "images/projekts-img/to-do-liste.png",
+        description: "Interaktive To Do Liste: Aufgaben hinzufügen, mit Badge markieren, abhacken",
+        icons: ["images/projekts-img/HTML.png", "images/projekts-img/CSS.png", "images/projekts-img/JS.png" ],
+        link: "https://smart-to-do-list-full.netlify.app/"
+    },
+    {
         id: 1,
         name: "Guess Word Game",
         image: "images/projekts-img/game.png",
@@ -30,7 +38,8 @@ let projektArr = [
         description: "Einfache Bestellungsseite für eine Restaurant",
         icons: ["images/projekts-img/HTML.png", "images/projekts-img/CSS.png", "images/projekts-img/JS.png" ],
         link: "https://restaurant-order-page-j.netlify.app/"
-    }
+    },
+    
 
 ]
 
